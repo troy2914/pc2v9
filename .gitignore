@@ -13,6 +13,8 @@ passwords.txt
 pc2export.dat
 results.xml
 results_*.xml
+.DS_Store
+*.sw?
 
 /.classes
 /realm.properties

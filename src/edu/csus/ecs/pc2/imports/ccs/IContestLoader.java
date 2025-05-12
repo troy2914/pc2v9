@@ -23,7 +23,46 @@ import edu.csus.ecs.pc2.util.ScoreboardVariableReplacer;
  */
 public interface IContestLoader {
 
-    String DEFAULT_CONTEST_YAML_FILENAME = "contest.yaml";
+    /**
+     *  with the following fields: "id", "name", "formal_name", "start_time", "duration", "scoreboard_freeze_duration", "penalty_time"
+     */
+    static final String DEFAULT_CONTEST_JSON_FILENAME = "contest.json";
+
+    /**
+     *  with the following fields: "id", "label", "name", "ordinal", "rgb", "color", "time_limit", "test_data_count"
+     */
+    static final String DEFAULT_PROBLEMS_JSON_FILENAME = "problems.json";
+
+    /**
+     *  with the following fields: "id", "name", "entry_point_required", "entry_point_name", "extensions", "compiler.command", "runner.command"
+     */
+    static final String DEFAULT_LANGUAGES_JSON_FILENAME = "languages.json";
+
+    /**
+     *  with the following fields:  "id", "icpc_id", "name"
+     */
+    static final String DEFAULT_GROUPS_JSON_FILENAME = "groups.json";
+
+    /**
+     *  with the following fields: "id", "icpc_id", "label", "name", "display_name", "organization_id", "group_ids"
+     */
+    static final String DEFAULT_TEAMS_JSON_FILENAME = "teams.json";
+
+    /**
+     *  with the follogin fields: "id", "icpc_id", "name", "formal_name"
+     */
+    static final String DEFAULT_ORGANIZATIONS_JSON_FILENAME = "organizations.json";
+
+    /**
+     *  with the following fields: "id", "username", "type", "team_id" and "password".
+     */
+    static final String DEFAULT_ACCOUNTS_JSON_FILENAME = "accounts.json";
+
+    static final String DEFAULT_PROBLEMS_YAML_FILENAME = "problems.yaml";
+
+    static final String DEFAULT_CONTEST_YAML_FILENAME = "contest.yaml";
+
+    static final String DEFAULT_ACCOUNTS_YAML_FILENAME = "accounts.yaml";
 
     String DEFAULT_PROBLEM_YAML_FILENAME = "problem.yaml";
 
